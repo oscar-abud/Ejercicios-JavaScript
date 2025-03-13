@@ -80,5 +80,34 @@ for (let i = 0; i < 50; i++) {
 //-----------------------------------------------------
 
 /*Ejercicio 5
-
+    Dado un arreglo desordenado de numeros enteros, encuentra el primer entero positivo (mayor que 0) que falta en la secuencia.
 */
+
+const lista = [3, 4, -1, 1]
+//Output 2
+
+const lista2 = [1, 2, 0]
+//Output 3
+
+const lista3 = [3, 4, -1, 1, 2, 7, 10]
+//Output 5
+
+function encontrar_faltante(lista) {
+    
+    let numFaltante = 1
+
+    // Mientras el número esté en la lista, aumenta el número
+    while (lista.includes(numFaltante)) { // Ocupamos el método includes para saber si el número está en la lista
+        numFaltante++   // Aumentamos el número
+    }
+
+    console.log(`El número faltante en la lista ${lista} es: ${num}`)
+}
+
+console.log()
+encontrar_faltante(lista)
+console.log("-".repeat(50))
+encontrar_faltante(lista2)
+console.log("-".repeat(50))
+encontrar_faltante(lista3)
+console.log("-".repeat(50))
