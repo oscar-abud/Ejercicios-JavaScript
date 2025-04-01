@@ -24,7 +24,7 @@ const palindromoForEach = string => {
     let acumulador = ''
 
     stringList.forEach( e => {
-        return acumulador = e + acumulador
+        acumulador = e + acumulador
     })
 
     return acumulador === string ? `${string} es palindromo: '${acumulador}'` : `${string} no es palindromo: '${acumulador}'`
